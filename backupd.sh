@@ -84,7 +84,7 @@ cp -r --backup $dir $backupdir/$time
 #####
 touch info.new;
 
-while [ 1 ]
+while true
 do
     sleep $intervalsecs;
     time=$(date '+%Y-%m-%d-%H-%M-%S')
