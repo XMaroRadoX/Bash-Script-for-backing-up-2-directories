@@ -6,6 +6,8 @@ A simple bash script to make a backup of a directory to another one while automa
 
  * Place directories next to each other and the script next to them
  * Run the script
+ * Put your inputs
+
 
 ## Hirechal view
 
