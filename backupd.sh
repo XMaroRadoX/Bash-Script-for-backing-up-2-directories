@@ -43,17 +43,17 @@ else
 fi
 
 # Check for Backup directory
-if [ -d "$backupdir" ]
-then
-  echo -e "Backup directory exists....
-  \n Continuing...."
-  echo
-else
+#if [ -d "$backupdir" ]
+#then
+ # echo -e "Backup directory exists....
+  #\n Continuing...."
+  #echo
+#else
 #create directory
-  echo "Alert: ${backupdir} doesn't exist"
-  echo "Creating new directory at ${backupdir}..."
-  mkdir -p $backupdir
-fi
+#  echo "Alert: ${backupdir} doesn't exist"
+ # echo "Creating new directory at ${backupdir}..."
+  #mkdir -p $backupdir
+#fi
 
 regex='^[0-9]+$'
 if ! [[ $intervalsecs =~ $regex ]] ; 
