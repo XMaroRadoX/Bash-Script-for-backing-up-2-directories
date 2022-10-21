@@ -28,7 +28,7 @@ by doing "crontab -e" then putting the cronjob in it
  </p>
 
 
-##Code overview
+## Code overview
 Code is divided into sections:
 <h2> 1st : variable definition </h2>
 <p> variables are defined then stored to be processed for validity </p>
