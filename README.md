@@ -3,12 +3,39 @@
 A simple bash script to make a backup of a directory to another one while automatically checking if there is an update to the source directory and updating the backup directory.
 
 ## Environment Setup
+<h2> Script only </h2>
+<p> * Place directories next to each other and the script next to them
+ * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs)
+  <Running in sudo mode will ensure process stability>
+ * Scripts executes sucessfully if there is no wrong input and the directory exists 
+  </p>
 
- * Place directories next to each other and the script next to them
- * Run the script
- * Put your inputs
+<h2> Script with makefile </h2>
+<p>* Place directories , script and make file in same folder
+  * Run "make" command in the shell
+ </p>
+<h2> cronjob </h2>
+<p>* Place directories , script and make file in same folder
+  1st: user should place his "name" in the cron allow folder
+  by doing "sudo cat cron.allow <their-name>"
+  2nd: user should run "sudo systemctl status cron.service"
+to check if the cron service exists on his machine.
+  3rd: if the user wants the script to run each minute he should open the crontab 
+by doing "crontab -e" then putting the cronjob in it
+  <*/1 * * * * /bin/sh <pathtoscript>/scriptname.sh>
+  scriptname would be backupd
+   * C) Cron expression would be : 31 00 3 * FRI
+ </p>
 
 
+##Code overview
+Code is divided into sections:
+<h2> 1st : variable definition </h2>
+<p> variables are defined then stored to be processed for validity </p>
+<h2> 2nd : validtaion of variables </h2>
+<p> Validation is run to check for wrong formatted input </p>
+<h2> 3rd : backup service </h2>
+<p> A loop is run with a sleeping period to check for the maximum number of backups and process the backup </p>
 ## Hirechal view
 
 <img src="view.jpg">
