@@ -1,0 +1,1 @@
+*/1 * * * * /bin/bash /environment/oslab1/backupd.sh
