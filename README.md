@@ -5,28 +5,26 @@ A simple bash script to make a backup of a directory to another one while automa
 ## Environment Setup
 ### Script only 
  * Place directories next to each other and the script next to them 
- * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs)
-  <Running in sudo mode will ensure process stability> 
+ * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs) <Running in sudo mode will ensure process stability> 
  * Scripts executes sucessfully if there is no wrong input and the directory exists 
   
 
 ### Script with makefile 
-<p>* Place directories , script and make file in same folder <br>
-  * Run "make" command in the shell <br>
- </p>
+* Place directories , script and make file in same folder
+* Run "make" command in the shell 
+
  
 ### cronjob
-<p>* Place directories , script and make file in same folder <br>
-  1st: user should place his "name" in the cron allow folder
-  by doing "sudo cat cron.allow <their-name>" <br>
-  2nd: user should run "sudo systemctl status cron.service"
+ Place directories , script and make file in same folder 
+ * 1st: user should place his "name" in the cron allow folder
+  by doing "sudo cat cron.allow <their-name>" 
+ * 2nd: user should run "sudo systemctl status cron.service"
 to check if the cron service exists on his machine.
-  3rd: if the user wants the script to run each minute he should open the crontab 
-by doing "crontab -e" then putting the cronjob in it <br>
+ * 3rd: if the user wants the script to run each minute he should open the crontab 
+by doing "crontab -e" then putting the cronjob in it 
   <*/1 * * * * /bin/sh <pathtoscript>/scriptname.sh>
   scriptname would be backupd <br>
-   * C) Cron expression would be : 31 00 3 * FRI <br>
- </p>
+
 
 
 ## Code overview
