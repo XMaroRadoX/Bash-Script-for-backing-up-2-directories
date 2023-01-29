@@ -41,7 +41,8 @@ variables are defined then stored to be processed for validity
 ## Hierarchical view :mount_fuji:
 <p align=center width=100%>
 <img src="view.jpg">
-  </p>
+ </p>
+  
 ### Licensing :pencil:
 
 This code is licensed under the MIT License.
