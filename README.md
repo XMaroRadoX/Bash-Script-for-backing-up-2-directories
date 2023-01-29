@@ -29,11 +29,11 @@ by doing "crontab -e" then putting the cronjob in it
 
 ## Code overview
 Code is divided into sections: <br>
-1st : variable definition <br>
+* 1st : variable definition <br>
 variables are defined then stored to be processed for validity <br>
- 2nd : validtaion of variables <br>
+ * 2nd : validtaion of variables <br>
  Validation is run to check for wrong formatted input <br>
- 3rd : backup service <br>
+*  3rd : backup service <br>
  A loop is run with a sleeping period to check for the maximum number of backups and process the backup <br>
 ## Hirechal view
 
