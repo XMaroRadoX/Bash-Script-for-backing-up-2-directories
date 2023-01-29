@@ -4,11 +4,11 @@ A simple bash script to make a backup of a directory to another one while automa
 
 ## Environment Setup
 ### Script only 
-<p> * Place directories next to each other and the script next to them <br>
- * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs)<br>
-  <Running in sudo mode will ensure process stability> <br>
- * Scripts executes sucessfully if there is no wrong input and the directory exists <br>
-  </p>
+ * Place directories next to each other and the script next to them 
+ * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs)
+  <Running in sudo mode will ensure process stability> 
+ * Scripts executes sucessfully if there is no wrong input and the directory exists 
+  
 
 ### Script with makefile 
 <p>* Place directories , script and make file in same folder <br>
