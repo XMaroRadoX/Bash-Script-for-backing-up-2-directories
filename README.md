@@ -3,18 +3,18 @@
 A simple bash script to make a backup of a directory to another one while automatically checking if there is an update to the source directory and updating the backup directory.
 
 ## Environment Setup
-<h2> Script only </h2>
+### Script only 
 <p> * Place directories next to each other and the script next to them <br>
  * Run the script and append the inputs (dir , backupdir , maxbackups , intervalsecs)<br>
   <Running in sudo mode will ensure process stability> <br>
  * Scripts executes sucessfully if there is no wrong input and the directory exists <br>
   </p>
 
-<h2> Script with makefile </h2>
+### Script with makefile 
 <p>* Place directories , script and make file in same folder <br>
   * Run "make" command in the shell <br>
  </p>
-<h2> cronjob </h2>
+### cronjob
 <p>* Place directories , script and make file in same folder <br>
   1st: user should place his "name" in the cron allow folder
   by doing "sudo cat cron.allow <their-name>" <br>
