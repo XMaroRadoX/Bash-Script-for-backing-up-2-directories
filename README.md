@@ -39,5 +39,20 @@ variables are defined then stored to be processed for validity
  A loop is run with a sleeping period to check for the maximum number of backups and process the backup 
 
 ## Hierarchical view :mount_fuji:
-
+<p align=center width=100%>
 <img src="view.jpg">
+  </p>
+### Licensing :pencil:
+
+This code is licensed under the MIT License.
+
+### Authors :pen:
+
+* Marwan Radwan
+
+### Contribution :clinking_glasses:
+
+Feel free to contribute just make a pull request and do what you wish. 😼
+
+[![License](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
